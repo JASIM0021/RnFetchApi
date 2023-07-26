@@ -52,7 +52,7 @@ To make a POST request, use the `post` method:
 
 ```javascript
 const postData = {
-  method: "POST",
+  
   formData: { key: "value" },
   typecontent: false,
   token: "your_access_token_here",
@@ -75,7 +75,7 @@ To make a PUT request, use the `put` method:
 
 ```javascript
 const putData = {
-  method: "PUT",
+ 
   formData: { key: "updated_value" },
   typecontent: false,
   token: "your_access_token_here",
@@ -107,7 +107,28 @@ RnFetchApi.del("someendpoint", "your_access_token_here")
     console.error(error);
   });
 ```
+##### CUSTOM HEADER
+ when making a GET request (or any other API call), you can include custom headers in the customHeaders object to send them along with the request. This provides flexibility for users to add any additional headers they might need for specific API calls.
 
+ ```javascript
+ const customHeaders = {
+  "X-Custom-Header": "Custom Value",
+  "Authorization": "Custom Token",
+};
+
+RnFetchApi.get("someendpoint", "your_access_token_here", customHeaders)
+  .then((response) => {
+    // Handle the response
+    console.log(response);
+  })
+  .catch((error) => {
+    // Handle errors
+    console.error(error);
+  });
+
+ 
+ ```
+ As shown in the code above, you can pass the customHeaders object as the third parameter to the post, put, and del methods to include any custom headers you want in the request. This allows you to send additional information, such as authentication tokens or any other headers required by the API endpoint.
 ### License
 
 This package is open-source and available under the [MIT License](LICENSE).
