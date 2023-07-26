@@ -1,6 +1,6 @@
 {
   "name": "rnfetchapi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple utility for making API calls using fetch in JavaScript or TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,12 +19,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JASIM0021/ApiHelper/tree/master"
+    "url": "https://github.com/JASIM0021/RnFetchApi/tree/master"
   },
   "bugs": {
-    "url": "https://github.com/JASIM0021/ApiHelper/tree/master/issues"
+    "url": "https://github.com/JASIM0021/RnFetchApi/tree/master/issues"
   },
-  "homepage": "https://github.com/JASIM0021/ApiHelper/tree/master#readme",
+  "homepage": "https://github.com/JASIM0021/RnFetchApi/tree/master#readme",
 
   "scripts": {
     "build": "tsc",
